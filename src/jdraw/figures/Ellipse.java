@@ -6,6 +6,7 @@ import java.awt.Rectangle;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.RoundRectangle2D;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.awt.*;
@@ -71,6 +72,8 @@ public class Ellipse extends AbstractFigure {
 	public Rectangle getBounds() {
 		return ellipse.getBounds();
 	}
+
+
 
 
 }
