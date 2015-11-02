@@ -1,10 +1,16 @@
 package jdraw.figures;
 
+import jdraw.figures.handles.HandleType;
+import jdraw.figures.handles.LineHandle;
+import jdraw.framework.FigureHandle;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.geom.Line2D;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Line extends AbstractFigure {	
 	/**
@@ -62,6 +68,15 @@ public class Line extends AbstractFigure {
 	@Override
 	public Rectangle getBounds() {
 		return line.getBounds();
+	}
+
+	@Override
+	public List<FigureHandle> getHandles() {
+		List<FigureHandle> handles = new LinkedList<>();
+		handles.add(new LineHandle(this, HandleType.WEST));
+		handles.add(new LineHandle(this, HandleType.EAST));
+
+		return handles;
 	}
 
 }

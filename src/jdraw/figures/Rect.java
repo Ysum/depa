@@ -17,7 +17,7 @@ import java.awt.Rectangle;
  * @author Christoph Denzler
  *
  */
-public class Rect extends AbstractFigure  {
+public class Rect extends AbstractRectFigure  {
 	/**
 	 * 
 	 */

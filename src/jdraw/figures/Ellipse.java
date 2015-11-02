@@ -23,7 +23,7 @@ import jdraw.framework.FigureListener;
  * @author Lukas Musy
  *
  */
-public class Ellipse extends AbstractFigure {
+public class Ellipse extends AbstractRectFigure {
 	
 	private java.awt.geom.Ellipse2D ellipse;
 	
